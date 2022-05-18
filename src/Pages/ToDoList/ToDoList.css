@@ -1,0 +1,156 @@
+.toDoList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+}
+
+.toDoList>h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 36px;
+    font-family: 'Yeseva One', cursive;
+    text-shadow: 1px 1px 6px rgba(33, 1, 20, 0.765);
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+}
+
+.addTasks {
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+}
+
+.addTasks>input {
+    background-color: rgba(251, 245, 245, 0.971);
+    padding: 15px 16px;
+    width: 600px;
+    border: none;
+    border-radius: 24px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.469);
+    outline: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+.addTasks>input::placeholder {
+    letter-spacing: 1px;
+
+}
+
+.addTasks>input:focus {
+    outline: 2px solid rgba(99, 55, 113, 0.446);
+}
+
+.addTasks>.add__btn {
+    position: absolute;
+    right: 4px;
+    top: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 12px;
+    background-color: rgba(106, 54, 123, 0.913);
+    border-radius: 850%;
+    transition: all 0.5s;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.639), inset 0 0 2px rgba(0, 0, 0, 0.364);
+}
+
+.add__btn>img {
+    width: 16px;
+    height: 16px;
+}
+
+.buttonsFilter {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+.filterTasks {
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    padding: 12px;
+    letter-spacing: 2px;
+    background-color: rgba(0, 0, 0, 0.149);
+    border-radius: 8px;
+    transition: all 0.5s;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.639), inset 0 0 2px rgba(0, 0, 0, 0.364);
+}
+
+.filterTasks.select {
+    background-color: rgba(94, 23, 117, 0.446);
+}
+
+.toDoList__content {
+    width: 90%;
+}
+
+.toDoList__content__tasks {
+    border-top: none;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+.task {
+    display: flex;
+    padding: 16px 20px;
+    gap: 8px;
+    align-items: center;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.469), inset 0 0 4px rgba(0, 0, 0, 0.364);
+    border-radius: 8px;
+    justify-content: space-between;
+    background-color: rgb(251, 245, 245);
+}
+
+.task>p {
+    font-size: 12px;
+}
+
+.checkBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 3px 1px rgba(68, 68, 68, 0.67);
+    cursor: pointer;
+}
+
+.checkBox>img {
+    width: 12px;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.78));
+}
+
+.checkBox.checked {
+    box-shadow: inset 0 0 6px 1px rgba(21, 21, 21, 0.567), 1px 1px 3px rgba(0, 0, 0, 0.695);
+    background-color: rgba(106, 54, 123, 0.913);
+    ;
+}
+
+.delete__btn>img {
+    width: 20px;
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.194));
+}
