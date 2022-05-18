@@ -1,0 +1,157 @@
+.users {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    scrollbar-width: none;
+
+}
+
+.users>h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 36px;
+    font-family: 'Yeseva One', cursive;
+    text-shadow: 1px 1px 6px rgba(33, 1, 20, 0.765);
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+}
+
+.users__top>button {
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    padding: 12px;
+    letter-spacing: 2px;
+    background-color: rgba(94, 23, 117, 0.446);
+    border-radius: 8px;
+    transition: all 0.5s;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.639), inset 0 0 2px rgba(0, 0, 0, 0.364);
+    border: none;
+}
+
+.users__top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.field {
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(87, 34, 87);
+}
+
+select {
+    width: 100%;
+    min-width: 15ch;
+    max-width: 30ch;
+    border-radius: 0.25em;
+    padding: 0.60em 0.60em;
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: rgb(67 57 126);
+    outline: none;
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 14px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.639), inset 0 0 2px rgba(0, 0, 0, 0.364);
+    border: none;
+}
+
+table {
+    padding: 0 8px;
+    background-color: white;
+    margin: 16px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.hscroll {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+}
+
+.hscroll::-webkit-scrollbar {
+    display: none;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f0ddf7;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+tr {
+    font-size: 14px;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgba(72, 26, 87, 0.759);
+    color: white;
+    cursor: pointer;
+}
+.arrow{
+    width: 10px;
+    transform: rotateZ(0deg);
+    transition: all 0.4s;
+}
+
+.arrow.desc{
+    transform: rotateZ(180deg);
+}
+
+.actionsBtn>button{
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    padding: 4px 8px;
+    letter-spacing: 2px;
+    background-color: rgba(25, 47, 89, 0.736);
+    border-radius: 8px;
+    transition: all 0.5s;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.639), inset 0 0 2px rgba(0, 0, 0, 0.364);
+    border: none;
+}
+.actionsBtn{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.actionsBtn>.btnDelte{
+    background-color: rgb(210, 104, 80);
+}
+.actionsBtn>.btnReactivate{
+    background-color: #53b153;
+}
