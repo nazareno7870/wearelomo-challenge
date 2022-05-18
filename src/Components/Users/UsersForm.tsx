@@ -26,20 +26,20 @@ export default function UsersForm({
     setNextId(Math.max(...users.users.map((user: User) => user.id)) + 1);
   }, [users]);
 
-  const handleName = (e: any) => {
+  const handleName = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.value.length > 3) seterrors({ ...errors, name: null });
     setName(e.target.value);
   };
 
-  const handleGender = (e: any) => {
+  const handleGender = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setGender(e.target.value);
   };
 
-  const handleStatus = (e: any) => {
+  const handleStatus = (e: React.ChangeEvent<HTMLSelectElement>) => {
     steStatus(e.target.value);
   };
 
-  const handleEmail = (e: any) => {
+  const handleEmail = (e: React.ChangeEvent<HTMLInputElement>) => {
     const re =
       /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (re.test(String(email).toLowerCase()))
